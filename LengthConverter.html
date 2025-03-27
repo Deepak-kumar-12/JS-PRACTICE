@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="cm" placeholder="Enter cm">
+    <button  onclick="convert()" id="btn">Covert to Inches</button>
+    <h1 id="h1"></h1>
+
+
+    <script>
+        function convert(){
+            let cmval = Number(document.getElementById("cm").value)
+            let inchval = cmval/2.54;
+            let result = document.getElementById("h1");
+            result.innerHTML = inchval 
+        }
+
+    </script>
+</body>
+</html>
